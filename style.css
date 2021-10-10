@@ -1,0 +1,258 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+ .navbar{
+    height: 80px;
+    background-color:orchid !important;
+    padding: 0 10px;
+}
+img{
+    max-width: 100%;
+}
+
+.navbar-collapse{
+    background-color: orchid;
+    z-index: 100;
+}
+html.body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-fluid{
+    padding-left: 6%;
+}
+.container{
+    top:10%;
+}
+.carousel-caption{
+    color:purple;
+}
+   
+  .navbar-nav
+{
+    padding-left: 10%;
+}
+.navbar-brand{
+    font-size: 2rem;
+    color:teal;
+
+}
+.navbar-brand:hover{
+    color: black;
+}
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: teal;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: black;
+}
+.cartCount{
+    font-size: large;
+    color:teal;
+    float:right;
+}
+
+.cartCount sup{
+    padding: 3px 7px;
+    background: orangered;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 3px;
+    color: white;
+    
+}
+
+/* eader{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
+}
+header nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:orchid;
+    padding: 0 10px;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration:solid
+}
+header nav a.brand{
+    font-size:x-large;
+    color: purple;
+}
+
+header nav a.cartCount{
+    padding: 10px 30px;
+    background:rgb(8,12,8);
+    border: dotted 2px lime
+}
+header nav a sup{
+    padding: 3px 7px;
+    background: orangered;
+    border-radius: 50%;
+    margin-left: 5px;
+    
+} 
+main{
+    margin-top: 60px;
+    padding: 10px;
+}
+main .container-lg{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px; 
+
+}
+main .container-lg section{
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}*/
+
+.btn-link{
+    color:black;
+    text-decoration: none;
+    border: solid 1px #fff;
+    font-size: 1em;
+}
+.col .btnAdToCart{
+    background: none;
+    color: #000000 !important;
+    border-radius: 100%;
+    border:solid 2 px rgb(0, 5, 10);
+    padding: 5px 8px;
+    position: relative;
+    left:180px;
+    bottom: 40px;
+    box-shadow: 0px 2px 10px 0px rgba(8,12,8,.4);
+    transition: all .38s ease-in-out;
+    text-decoration :none;
+}  
+
+/* main .container .card{
+    border: solid 1px teal;
+    position: relative;
+}
+main .container .card img{
+    width: 420px;
+    height: 350px;
+}
+main .container .card section{
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+  
+main .container .card button:hover{
+    background:dodgerblue;
+    color:#fff;
+} */
+main .callout{
+    position:absolute;
+    top: 60px;
+     right: 0;   
+    width:100%;
+    background:#eee;
+    z-index: 10;
+    box-shadow: 0 10px 20px 0 rgb(8,12,8);
+    height:auto;
+    
+}
+/*main .callout .row:first-child{
+    height: calc(100vh-210px);
+    overflow-y: auto;
+
+}
+main .callout .row:first-child{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-gap:10px;
+    border-bottom: solid 1px #ddd;
+}
+main .callout .row:first-child img{
+    width: 120px;
+    height:100px;
+}
+main .callout .row:first-child  section{
+    display: grid;
+    justify-content: space-between;
+}
+main .callout .row:first-child  button{
+    display: grid;
+    justify-content: space-between;
+} */
+.btnRemoveCartItem{
+    background-color: black;
+    color: red;
+    border: none;
+    padding: 0 20px;
+    font-size: 2rem;
+}
+/*main .callout .row:last-child {
+    background: #222;
+    color: #fff;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px;
+    padding: 10px;
+}
+main .callout .row:last-child section:first-child {
+    display: grid;
+}
+main .callout .row:last-child section:first-child {
+}
+main .callout .row:last-child section:last-child {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: auto 1fr auto auto;
+}*/
+main .callout .row:last-child section:first-child .billAmt{
+    display: grid;
+    grid-gap:10px;
+    font-size: 2em;
+    
+
+
+}
+main .callout .row:last-child section:last-child button.btnReset{
+    background-color: red;
+    color: #fff;
+    border: red;
+    width:100px;
+    height: 50px;
+}
+main .callout .row:last-child section:last-child button.btnCheckOut{
+    background-color:limegreen;
+    color: #fff;
+    border: red;
+    width:100px;
+    height: 50px;
+}
+
+
+main .callout .alert{
+    background: red;
+    color:#fff;
+    padding: 20px;
+    text-align: center;
+}
+main .callout.open{
+    right: 0;
+}
+
